@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Arnibish Ray</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <canvas id="bg"></canvas>
+
+    <!-- NAVBAR (always visible on non-home pages) -->
+    <header class="nav always-show" id="nav">
+      <nav class="nav-inner">
+        <a class="nav-logo" href="index.html">Arnibish</a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+
+          <!-- EXPERIENCE DROPDOWN -->
+          <div class="dropdown" id="expDropdown">
+            <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+              Experience ▾
+            </button>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu">
+                <a href="industry.html">Industry Experience</a>
+                <a href="research.html">Research Experience</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="volunteering.html">Volunteering</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECTS DROPDOWN (THIS PAGE) -->
+          <div class="dropdown" id="projDropdown">
+            <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+              Projects ▾
+            </button>
+            <div class="dropdown-menu">
+              <a href="#arm">Gesture-Controlled 6-Axis Robotic Arm</a>
+              <a href="#livevitals">Live Patient Vitals Monitoring Enclosure</a>
+              <a href="#vader">VADER Sentiment & Movement Analysis</a>
+              <a href="#imu">Wearable IMU Running Biomechanics Analysis</a>
+              <a href="#northend">Taste of the North End</a>
+            </div>
+          </div>
+
+          <a href="cad.html">CAD Designs</a>
+          <a href="certs.html">Certifications & Awards</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SCROLL TRACKER -->
+    <aside class="scroll-tracker" id="scrollTracker">
+      <div class="tracker-item" data-target="arm">
+        <svg class="tracker-ring" viewBox="0 0 40 40">
+          <circle class="ring-track" cx="20" cy="20" r="16"></circle>
+          <circle class="ring-fill" cx="20" cy="20" r="16"></circle>
+        </svg>
+        <span class="tracker-label">Robotic Arm</span>
+      </div>
+      <div class="tracker-connector"><div class="connector-fill"></div></div>
+
+      <div class="tracker-item" data-target="livevitals">
+        <svg class="tracker-ring" viewBox="0 0 40 40">
+          <circle class="ring-track" cx="20" cy="20" r="16"></circle>
+          <circle class="ring-fill" cx="20" cy="20" r="16"></circle>
+        </svg>
+        <span class="tracker-label">Vitals Enclosure</span>
+      </div>
+      <div class="tracker-connector"><div class="connector-fill"></div></div>
+
+      <div class="tracker-item" data-target="vader">
+        <svg class="tracker-ring" viewBox="0 0 40 40">
+          <circle class="ring-track" cx="20" cy="20" r="16"></circle>
+          <circle class="ring-fill" cx="20" cy="20" r="16"></circle>
+        </svg>
+        <span class="tracker-label">VADER Analysis</span>
+      </div>
+      <div class="tracker-connector"><div class="connector-fill"></div></div>
+
+      <div class="tracker-item" data-target="imu">
+        <svg class="tracker-ring" viewBox="0 0 40 40">
+          <circle class="ring-track" cx="20" cy="20" r="16"></circle>
+          <circle class="ring-fill" cx="20" cy="20" r="16"></circle>
+        </svg>
+        <span class="tracker-label">IMU Biomechanics</span>
+      </div>
+      <div class="tracker-connector"><div class="connector-fill"></div></div>
+
+      <div class="tracker-item" data-target="northend">
+        <svg class="tracker-ring" viewBox="0 0 40 40">
+          <circle class="ring-track" cx="20" cy="20" r="16"></circle>
+          <circle class="ring-fill" cx="20" cy="20" r="16"></circle>
+        </svg>
+        <span class="tracker-label">North End</span>
+      </div>
+    </aside>
+
+    <main class="page page-wide">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">Five projects, from CAD models to research data, that show how I like to build and problem-solve.</p>
+
+      <!-- PROJECT 1 -->
+      <section id="arm" class="project-section">
+        <span class="project-index">01</span>
+        <div class="project-hero">
+          <h2 class="project-title">Gesture-Controlled 6-Axis Robotic Arm</h2>
+          <p class="project-tagline">A robotic arm that mimics human arm movement, controlled entirely through gestures.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-block">
+            <h3>Overview</h3>
+            <p>
+              This project was about designing, manufacturing, and integrating a robotic arm
+              that mimics human arm movement using gesture-based control. It pulled together
+              mechanical design, CAD, electronics, manufacturing, and embedded systems into one
+              working system, and honestly it's the project that made me fall in love with
+              robotics.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Skills & Tools</h3>
+            <div class="chip-row">
+              <span class="chip chip-sm">SolidWorks</span>
+              <span class="chip chip-sm">3D Printing</span>
+              <span class="chip chip-sm">Servo Motors</span>
+              <span class="chip chip-sm">Design for Manufacturing</span>
+              <span class="chip chip-sm">Embedded Systems</span>
+              <span class="chip chip-sm">Electromechanical Assembly</span>
+              <span class="chip chip-sm">CAD Assemblies</span>
+              <span class="chip chip-sm">Structural Design</span>
+              <span class="chip chip-sm">Wiring & Power Distribution</span>
+              <span class="chip chip-sm">Iterative Prototyping</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h3>My Contributions</h3>
+            <ul>
+              <li>Modeled every mechanical component in SolidWorks, paying close attention to tolerances, mounting interfaces, and structural rigidity</li>
+              <li>Went through multiple design passes to get motors fitting properly inside the links while keeping everything strong and lightweight</li>
+              <li>Integrated the electronics, including servo motors, power distribution, controllers, and wiring, planning the internal routing right in CAD</li>
+              <li>Tested range of motion, repeatability, structural stability, and joint alignment, refining the arm after every round</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Key Features / Design Highlights</h3>
+            <ul>
+              <li>Six independent degrees of freedom so the arm can rotate and articulate similarly to a human arm</li>
+              <li>Servo motors mounted directly into custom-designed structural components</li>
+              <li>Parts designed specifically for 3D printing to cut down print time, reduce support material, and hold up better over time</li>
+              <li>Fasteners, bearings, shafts, and servo mounts all built into the CAD models so everything fit together on assembly</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Challenges & Solutions</h3>
+            <p>
+              Getting the motors to fit properly inside the links while keeping enough strength
+              and not adding excess weight took several rounds of redesigning. Wire routing was
+              its own headache too, so I planned it directly into the CAD models to keep things
+              clean and stop wires from catching on the moving joints.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Outcome</h3>
+            <p>
+              I ended up with a complete robotic arm that shows off mechanical design, CAD
+              modeling, design for manufacturing, robotics integration, electromechanical
+              assembly, rapid prototyping, and a lot of iterative problem solving along the way.
+            </p>
+          </div>
+
+          <div class="project-block project-gallery-block">
+            <h3>Gallery / Links</h3>
+            <img class="project-poster" src="guesture_1.png" alt="Gesture-Controlled 6-Axis Robotic Arm" />
+            <div class="project-links">
+              <a class="project-link" href="cad.html">View in CAD Designs →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT 2 -->
+      <section id="livevitals" class="project-section">
+        <span class="project-index">02</span>
+        <div class="project-hero">
+          <h2 class="project-title">Live Patient Vitals Monitoring Enclosure</h2>
+          <p class="project-tagline">Engineering a housing that keeps a real-time patient monitoring system organized and protected.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-block">
+            <h3>Overview</h3>
+            <p>
+              For this one I designed a custom housing for a real-time patient monitoring
+              system. The sensing electronics themselves weren't mine to design, so the real
+              challenge was engineering an enclosure that could securely organize, protect, and
+              integrate every electronic component needed for continuous physiological
+              monitoring.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Skills & Tools</h3>
+            <div class="chip-row">
+              <span class="chip chip-sm">SolidWorks</span>
+              <span class="chip chip-sm">Enclosure Design</span>
+              <span class="chip chip-sm">Design for Assembly</span>
+              <span class="chip chip-sm">Tolerance Analysis</span>
+              <span class="chip chip-sm">Electronics Integration</span>
+              <span class="chip chip-sm">Cable Management</span>
+              <span class="chip chip-sm">Ventilation Design</span>
+              <span class="chip chip-sm">Mechanical Packaging</span>
+              <span class="chip chip-sm">Rapid Prototyping</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h3>My Contributions</h3>
+            <ul>
+              <li>Designed the internal layout to house circuit boards, processing hardware, displays, connectors, wiring, power components, and biomedical sensors</li>
+              <li>Built in custom mounting features like standoffs, screw bosses, alignment features, cable routing channels, ventilation openings, removable panels, and fastener locations</li>
+              <li>Iterated the design several times to improve component fit, internal clearances, and how easy it was to assemble</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Key Features / Design Highlights</h3>
+            <ul>
+              <li>An organized internal layout that houses all the electronics without wasting space</li>
+              <li>Removable panels so it can be maintained, upgraded, or troubleshot without tearing the whole thing apart</li>
+              <li>Ventilation openings and routing channels that help with heat dissipation and keep cables tidy</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Challenges & Solutions</h3>
+            <p>
+              The hardest part was balancing heat dissipation, structural rigidity, accessibility,
+              and portability while still keeping the whole thing manufacturable. It took a few
+              rounds of iteration to get the component fit and internal clearances right and to
+              make assembly simpler.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Outcome</h3>
+            <p>
+              I delivered a fully integrated enclosure that pulls together biomedical device
+              packaging, mechanical enclosure design, CAD modeling, design for assembly,
+              electronics integration, tolerance analysis, and rapid prototyping.
+            </p>
+          </div>
+
+          <div class="project-block project-gallery-block">
+            <h3>Gallery / Links</h3>
+
+            <p class="embed-label">Project Walkthrough</p>
+            <div class="embed-wrap">
+              <iframe
+                src="https://docs.google.com/presentation/d/1zly91rZ4wg-6uk9rz4lfi9llpF0RztxWaPvWijNHkWU/embed?start=false&loop=false&delayms=3000"
+                allowfullscreen="true"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="project-gallery">
+              <figure class="gallery-item">
+                <img src="livevitals_design.png" alt="Live Patient Vitals Monitoring Enclosure final design" />
+                <figcaption>Final Design</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="livevitals_circuit.png" alt="Live Patient Vitals Monitoring Enclosure circuit inside" />
+                <figcaption>Circuit Enclosure</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="livevitals_photo_1.png" alt="Live Patient Vitals Monitoring Enclosure cover case render" />
+                <figcaption>Cover Case</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="livevitals_photo_2.png" alt="Live Patient Vitals Monitoring Enclosure LCD and speaker home render" />
+                <figcaption>LCD & Speaker Home</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="livevitals_photo_3.png" alt="Live Patient Vitals Monitoring Enclosure circuit home render" />
+                <figcaption>Circuit Home</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="livevitals_photo_4.png" alt="Live Patient Vitals Monitoring Enclosure final CAD design render" />
+                <figcaption>Final CAD Design</figcaption>
+              </figure>
+            </div>
+
+            <div class="project-links">
+              <a class="project-link" href="cad.html">Related CAD Work →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT 3 -->
+      <section id="vader" class="project-section">
+        <span class="project-index">03</span>
+        <div class="project-hero">
+          <h2 class="project-title">VADER Sentiment & Movement Analysis</h2>
+          <p class="project-tagline">Using sentiment analysis to understand how people experience dancing and movement, with and without music.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-block">
+            <h3>Overview</h3>
+            <p>
+              This is an interdisciplinary biomechanics and data analysis research project I
+              worked on through LABSYNC at Northeastern, looking at how emotional experiences
+              relate to human movement. Participants ran through structured movement and dancing
+              tasks, some with music and some without, and then wrote about how the experience
+              felt to them.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Skills & Tools</h3>
+            <div class="chip-row">
+              <span class="chip chip-sm">Python</span>
+              <span class="chip chip-sm">VADER (NLP)</span>
+              <span class="chip chip-sm">Statistics</span>
+              <span class="chip chip-sm">Biomechanics Research</span>
+              <span class="chip chip-sm">Experimental Design</span>
+              <span class="chip chip-sm">Data Preprocessing</span>
+              <span class="chip chip-sm">Quantitative Analysis</span>
+              <span class="chip chip-sm">Scientific Communication</span>
+              <span class="chip chip-sm">Research Collaboration</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h3>My Contributions</h3>
+            <ul>
+              <li>Organized the experimental datasets and preprocessed participants' written responses</li>
+              <li>Applied VADER, a natural language processing tool, to turn those written responses into numerical sentiment scores</li>
+              <li>Compared those sentiment scores against measures of motor behavior variability recorded during the movement tasks</li>
+              <li>Ran statistical analyses and presented the findings through figures, graphs, and research presentations</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Key Features / Design Highlights</h3>
+            <ul>
+              <li>Turns qualitative, written responses into quantitative sentiment data that can actually be analyzed statistically</li>
+              <li>Connects emotional valence to movement quality, coordination, consistency, and variability</li>
+              <li>Brings together biomechanics, psychology, natural language processing, and statistics in one project</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Challenges & Solutions</h3>
+            <p>
+              The tricky part was comparing two very different kinds of data: sentiment scores
+              pulled from text and motor variability data pulled from movement. Getting those two
+              datasets to line up meant a lot of careful preprocessing and cross-referencing
+              before any real statistical relationships could be pulled out.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Outcome</h3>
+            <p>
+              This work helped build a better understanding of how music shapes both emotional
+              well-being and physical movement, and it showed how tools like sentiment analysis
+              can add a lot to biomechanics research.
+            </p>
+          </div>
+
+          <div class="project-block project-gallery-block">
+            <h3>Gallery / Links</h3>
+            <img class="project-poster" src="vader_poster.png" alt="VADER Sentiment & Movement Analysis research poster" />
+            <div class="project-links">
+              <a class="project-link" href="research.html">View Research Experience →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT 4 -->
+      <section id="imu" class="project-section">
+        <span class="project-index">04</span>
+        <div class="project-hero">
+          <h2 class="project-title">Wearable IMU Running Biomechanics Analysis</h2>
+          <p class="project-tagline">Studying running mechanics through wearable inertial sensors and signal processing.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-block">
+            <h3>Overview</h3>
+            <p>
+              This research project uses wearable inertial measurement units, or IMUs, to study
+              running mechanics and get a better handle on human movement while running. IMUs
+              pack accelerometers and gyroscopes that constantly record linear acceleration,
+              angular velocity, and orientation through a runner's gait cycle, which adds up to a
+              huge amount of time-series biomechanical data.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Skills & Tools</h3>
+            <div class="chip-row">
+              <span class="chip chip-sm">Python</span>
+              <span class="chip chip-sm">MATLAB</span>
+              <span class="chip chip-sm">Signal Processing</span>
+              <span class="chip chip-sm">IMU Sensors</span>
+              <span class="chip chip-sm">Data Visualization</span>
+              <span class="chip chip-sm">Gait Analysis</span>
+              <span class="chip chip-sm">Data Cleaning</span>
+              <span class="chip chip-sm">Statistical Analysis</span>
+              <span class="chip chip-sm">Wearable Sensor Technology</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h3>My Contributions</h3>
+            <ul>
+              <li>Processed raw sensor data collected from wearable devices attached to runners at different body locations</li>
+              <li>Cleaned, filtered, synchronized, segmented, and normalized the signals before doing any biomechanical analysis</li>
+              <li>Evaluated gait characteristics like cadence, stride timing, impact patterns, movement variability, symmetry, and stability</li>
+              <li>Used statistical analysis and computational methods to compare runners and visualize trends</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Key Features / Design Highlights</h3>
+            <ul>
+              <li>Handles large, high-frequency time-series datasets coming straight off wearable sensors</li>
+              <li>Pulls a full set of gait metrics like cadence, stride timing, impact, symmetry, and consistency out of raw signals</li>
+              <li>Surfaces biomechanical patterns tied to running performance, injury risk, fatigue, and efficiency</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Challenges & Solutions</h3>
+            <p>
+              Raw IMU signals needed a lot of work before they were actually usable. Cleaning,
+              filtering, synchronizing, segmenting, and normalizing all had to happen first, so I
+              built a structured signal-processing pipeline that could handle the scale and noise
+              that comes with wearable sensor data.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Outcome</h3>
+            <p>
+              Pairing wearable sensing with computational analysis gave real insight into
+              athletic performance and running mechanics, and it let me show off biomechanics
+              research, signal processing, and quantitative analysis on a genuinely large,
+              real-world dataset.
+            </p>
+          </div>
+
+          <div class="project-block project-gallery-block">
+            <h3>Gallery / Links</h3>
+            <img class="project-poster" src="wearableimu_poster.png" alt="Wearable IMU Running Biomechanics Analysis research poster" />
+            <div class="project-links">
+              <a class="project-link" href="research.html">View Research Experience →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT 5 -->
+      <section id="northend" class="project-section">
+        <span class="project-index">05</span>
+        <div class="project-hero">
+          <h2 class="project-title">Taste of the North End</h2>
+          <p class="project-tagline">A sensory-friendly cooking game built for the Boston Children's Museum.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-block">
+            <h3>Overview</h3>
+            <p>
+              This was a semester-long Cornerstone of Engineering II project built for the
+              Boston Children's Museum. The goal was to design and build a large, interactive,
+              sensory-friendly cooking game that teaches kids ages 4 to 8 about traditional North
+              End recipes through hands-on play, pulling together mechanical engineering,
+              electronics, CAD, manufacturing, programming, and user-centered design into one
+              working exhibit.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Skills & Tools</h3>
+            <div class="chip-row">
+              <span class="chip chip-sm">SolidWorks</span>
+              <span class="chip chip-sm">3D Printing</span>
+              <span class="chip chip-sm">Arduino</span>
+              <span class="chip chip-sm">RFID Technology</span>
+              <span class="chip chip-sm">Design for Manufacturing</span>
+              <span class="chip chip-sm">Embedded Systems</span>
+              <span class="chip chip-sm">User-Centered Design</span>
+              <span class="chip chip-sm">Team Collaboration</span>
+              <span class="chip chip-sm">Engineering Documentation</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h3>My Contributions</h3>
+            <ul>
+              <li>Helped design more than 80 custom SolidWorks components, from ingredients and utensils to mechanical features and structural hardware</li>
+              <li>Contributed to the Arduino-based control system that identifies RFID-tagged ingredients and checks recipe steps</li>
+              <li>Ran validation testing for durability, sensor reliability, gameplay flow, safety, and accessibility</li>
+              <li>Helped put together technical documentation, engineering reports, and demonstrations</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Key Features / Design Highlights</h3>
+            <ul>
+              <li>A custom-built kitchen structure with prep stations, a cooking pot, storage compartments, and an oven that reveals the finished dish</li>
+              <li>Each ingredient carries an RFID tag that the cooking pot's reader checks against the recipe in real time</li>
+              <li>Immediate feedback through LEDs and sounds, with a 3D-printed meal revealed once the recipe's done right</li>
+              <li>Gameplay built around six traditional North End recipes</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h3>Challenges & Solutions</h3>
+            <p>
+              Fitting and assembling more than 80 individual components so everything worked
+              together safely and reliably for young users took a lot of careful dimensioning,
+              iteration, and testing. The exhibit also had to survive repeated public use in a
+              museum, so we ran durability and sensor-reliability testing before it went on
+              display.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3>Outcome</h3>
+            <p>
+              The exhibit went from concept to design, fabrication, testing, and refinement,
+              and eventually to public demonstration at the Boston Children's Museum, showing off
+              mechanical design, embedded systems, RFID integration, and engineering validation
+              for hardware that real kids get to touch and play with.
+            </p>
+          </div>
+
+          <div class="project-block project-gallery-block">
+            <h3>Gallery / Links</h3>
+
+            <p class="embed-label">Project Walkthrough</p>
+            <div class="embed-wrap">
+              <iframe
+                src="https://docs.google.com/presentation/d/16YPujE828qNrO2mDNo_jRLhboBqGh90q9pYX9LncAJo/embed?start=false&loop=false&delayms=3000"
+                allowfullscreen="true"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="project-gallery">
+              <img src="northend_1.png" alt="Taste of the North End exhibit photo 1" />
+              <img src="northend_2.png" alt="Taste of the North End exhibit photo 2" />
+              <img src="northend_3.png" alt="Taste of the North End exhibit photo 3" />
+              <img src="northend_4.png" alt="Taste of the North End exhibit photo 4" />
+              <img src="northend_5.png" alt="Taste of the North End exhibit photo 5" />
+              <img src="northend_6.png" alt="Taste of the North End exhibit photo 6" />
+            </div>
+
+            <div class="project-links">
+              <a class="project-link" href="contact.html">Ask Me About This →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

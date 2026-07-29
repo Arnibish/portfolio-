@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Arnibish Ray</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <canvas id="bg"></canvas>
+
+    <header class="nav always-show" id="nav">
+      <nav class="nav-inner">
+        <a class="nav-logo" href="index.html">Arnibish</a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+
+          <div class="dropdown" id="expDropdown">
+            <a class="dropbtn" href="experience.html" aria-haspopup="true" aria-expanded="false">
+              Experience ▾
+            </a>
+            <div class="dropdown-menu">
+              <a href="industry.html">Industry Experience</a>
+              <a href="research.html">Research Experience</a>
+              <a href="clubs.html">Clubs</a>
+              <a href="volunteering.html">Volunteering</a>
+            </div>
+          </div>
+          <!-- PROJECTS DROPDOWN (OPEN MENU FIRST, DOESN'T NAVIGATE AWAY) -->
+          <div class="dropdown" id="projDropdown">
+            <!-- IMPORTANT: href="#" so it opens dropdown instead of leaving page -->
+            <a class="dropbtn" href="#" aria-haspopup="true" aria-expanded="false">Projects ▾</a>
+            <div class="dropdown-menu">
+              <a href="projects.html#arm">Gesture-Controlled 6-Axis Robotic Arm</a>
+              <a href="projects.html#livevitals">Live Patient Vitals Monitoring Enclosure</a>
+              <a href="projects.html#vader">VADER Sentiment & Movement Analysis</a>
+              <a href="projects.html#imu">Wearable IMU Running Biomechanics Analysis</a>
+              <a href="projects.html#northend">Taste of the North End</a>
+            </div>
+          </div>
+
+          <a href="cad.html">CAD Designs</a>
+          <a href="certs.html">Certifications & Awards</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        
+      </nav>
+    </header>
+
+    <main class="page contact-page">
+        <h1 class="page-title">Contact</h1>
+      
+        <div class="contact-cards">
+            <!-- Email -->
+            <div class="contact-card">
+              <img class="contact-img" src="outlook logo.png" alt="Outlook logo" />
+              <a class="contact-link" href="mailto:ray.arn@northeastern.edu">
+                Email me
+              </a>
+            </div>
+          
+            <!-- Resume -->
+            <div class="contact-card">
+              <img class="contact-img" src="transparent resume.png" alt="Resume preview" />
+              <a class="contact-link" href="arni_resume.pdf" target="_blank" rel="noopener">
+                Resume (PDF)
+              </a>
+            </div>
+          
+            <!-- LinkedIn -->
+            <div class="contact-card">
+              <img class="contact-img" src="linkdelnlogo.png" alt="LinkedIn logo" />
+              <a class="contact-link" href="https://www.linkedin.com/in/arnibish-ray" target="_blank" rel="noopener">
+                Add me on LinkedIn
+              </a>
+            </div>
+          </div>
+          
+      </main>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>

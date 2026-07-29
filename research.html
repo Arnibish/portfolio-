@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience | Arnibish Ray</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <canvas id="bg"></canvas>
+
+    <header class="nav always-show" id="nav">
+      <nav class="nav-inner">
+        <a class="nav-logo" href="index.html">Arnibish</a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+
+          <!-- EXPERIENCE DROPDOWN -->
+          <div class="dropdown" id="expDropdown">
+            <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+              Experience ▾
+            </button>
+
+            <div class="dropdown-menu">
+              <a href="industry.html">Industry Experience</a>
+              <a href="research.html">Research Experience</a>
+              <a href="clubs.html">Clubs</a>
+              <a href="volunteering.html">Volunteering</a>
+            </div>
+          </div>
+
+          <!-- PROJECTS DROPDOWN -->
+          <div class="dropdown" id="projDropdown">
+            <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+              Projects ▾
+            </button>
+
+            <div class="dropdown-menu">
+              <a href="projects.html#arm">Gesture-Controlled 6-Axis Robotic Arm</a>
+              <a href="projects.html#livevitals">Live Patient Vitals Monitoring Enclosure</a>
+              <a href="projects.html#vader">VADER Sentiment & Movement Analysis</a>
+              <a href="projects.html#imu">Wearable IMU Running Biomechanics Analysis</a>
+              <a href="projects.html#northend">Taste of the North End</a>
+            </div>
+          </div>
+
+          <a href="cad.html">CAD Designs</a>
+          <a href="certs.html">Certifications & Awards</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page page-wide">
+      <h1 class="page-title">Research Experience</h1>
+      <p class="exp-intro">
+        Ongoing research across two labs at Northeastern, spanning wearable sensing, biomechanics,
+        and musculoskeletal imaging.
+      </p>
+
+      <!-- LABSYNC -->
+      <section class="exp-entry" id="labsync">
+        <div class="exp-header">
+          <div class="exp-title-group">
+            <span class="exp-title">LABSYNC</span>
+            <span class="exp-role">Undergraduate Research Assistant</span>
+          </div>
+          <span class="exp-dates">Nov 2024 – Present</span>
+        </div>
+        <div class="exp-body">
+          <p>
+            Human movement and biomechanics research group at Northeastern. My work spans
+            wearable sensing, computational analysis, natural language processing, and large
+            physiological datasets across two projects below.
+          </p>
+
+          <div class="exp-sub">
+            <h4>VADER Sentiment and Movement Analysis</h4>
+            <p>
+              Studied how adults emotionally experience movement and dance tasks, with and
+              without music. Participants completed movement conditions and wrote about the
+              experience; I applied VADER (a natural language processing sentiment tool) to turn
+              those written responses into numerical valence scores, then compared them against
+              motor behavior variability from the movement data. Helped interpret results and
+              present findings through a scientific poster.
+            </p>
+            <div class="chip-row">
+              <span class="chip chip-sm">Python</span>
+              <span class="chip chip-sm">VADER (NLP)</span>
+              <span class="chip chip-sm">Statistics</span>
+              <span class="chip chip-sm">Experimental Design</span>
+              <span class="chip chip-sm">Data Preprocessing</span>
+              <span class="chip chip-sm">Quantitative Analysis</span>
+              <span class="chip chip-sm">Scientific Communication</span>
+              <span class="chip chip-sm">Research Collaboration</span>
+            </div>
+            <div class="exp-gallery-stacked">
+              <img src="vader_photo_1.png" alt="VADER research photo 1" />
+              <img src="vader_photo_2.png" alt="VADER research photo 2" />
+            </div>
+          </div>
+
+          <div class="exp-sub">
+            <h4>Wearable IMU Running Biomechanics (PEAK Fellowship)</h4>
+            <p>
+              Through Northeastern's PEAK Base Camp Fellowship, studied running biomechanics
+              using wearable IMU sensors (accelerometers and gyroscopes) across a dataset of
+              about 1,798 individuals from a running injury clinic, plus roughly 8,000 archived
+              activity files from NHANES sampled at 80 Hz. Processed and cleaned the sensor
+              signals, explored clustering methods to group runners by shared biomechanical
+              traits, and built criteria to identify running segments within the larger
+              national dataset.
+            </p>
+            <div class="chip-row">
+              <span class="chip chip-sm">Python</span>
+              <span class="chip chip-sm">MATLAB</span>
+              <span class="chip chip-sm">Signal Processing</span>
+              <span class="chip chip-sm">Data Clustering</span>
+              <span class="chip chip-sm">Large-Scale Data Processing</span>
+              <span class="chip chip-sm">Gait Analysis</span>
+              <span class="chip chip-sm">Wearable Sensor Technology</span>
+              <span class="chip chip-sm">Statistical Analysis</span>
+            </div>
+            <div class="exp-gallery-stacked">
+              <img src="peak_photo_1.png" alt="PEAK Fellowship research photo 1" />
+              <img src="peak_photo_2.png" alt="PEAK Fellowship research photo 2" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHEFELBINE LAB -->
+      <section class="exp-entry" id="shefelbine">
+        <div class="exp-header">
+          <div class="exp-title-group">
+            <span class="exp-title">Shefelbine Laboratory</span>
+            <span class="exp-role">Undergraduate Research Assistant</span>
+          </div>
+          <span class="exp-dates">Jan 2025 – Present</span>
+        </div>
+        <div class="exp-body">
+          <p>
+            Biomechanics and musculoskeletal research on hip morphology, studying anatomical
+            traits linked to femoroacetabular impingement and hip dysplasia in athletes. Work
+            includes identifying anatomical landmarks in medical images, labeling structures, and
+            measuring geometric hip features to compare across participants.
+          </p>
+          <div class="chip-row">
+            <span class="chip chip-sm">Medical Imaging Analysis</span>
+            <span class="chip chip-sm">Anatomical Landmarking</span>
+            <span class="chip chip-sm">Musculoskeletal Research</span>
+            <span class="chip chip-sm">Measurement Precision</span>
+            <span class="chip chip-sm">Data Organization</span>
+            <span class="chip chip-sm">Research Documentation</span>
+            <span class="chip chip-sm">Clinical Research Collaboration</span>
+            <span class="chip chip-sm">Attention to Detail</span>
+          </div>
+          <img class="exp-photo-large" src="shefelbine_1.png" alt="Shefelbine Lab research photo" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
