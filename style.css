@@ -163,6 +163,7 @@
     align-items: center;
     text-align: center;
     padding: 24px;
+    position: relative;
   }
   
   .hero-title {
@@ -578,6 +579,17 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
+  }
+
+  /* Some browsers don't reliably apply backface-visibility to iframes
+     (they get their own compositing layer), which can let the 3D
+     viewer show through on the "wrong" side. Force it explicitly. */
+  .flip-card.is-flipped .flip-front {
+    visibility: hidden;
+  }
+
+  .flip-card:not(.is-flipped) .flip-back {
+    visibility: hidden;
   }
   
   .flip-front {
@@ -1398,4 +1410,75 @@
   .flip-toggle-btn svg {
     width: 13px;
     height: 13px;
+  }
+
+  /* Scroll indicator (Home hero) */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    opacity: 0.85;
+    animation: scrollIndicatorFade 2.5s ease-in-out infinite;
+  }
+
+  .scroll-indicator-mouse {
+    width: 24px;
+    height: 38px;
+    border: 2px solid rgba(72, 214, 255, 0.7);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+  }
+
+  .scroll-indicator-wheel {
+    width: 4px;
+    height: 8px;
+    border-radius: 2px;
+    background: #48d6ff;
+    animation: scrollIndicatorWheel 1.6s ease-in-out infinite;
+  }
+
+  .scroll-indicator-chevrons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .scroll-indicator-chevrons span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid rgba(72, 214, 255, 0.6);
+    border-bottom: 2px solid rgba(72, 214, 255, 0.6);
+    transform: rotate(45deg);
+    animation: scrollIndicatorChevron 1.6s ease-in-out infinite;
+  }
+
+  .scroll-indicator-chevrons span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes scrollIndicatorWheel {
+    0% { transform: translateY(0); opacity: 1; }
+    60% { transform: translateY(10px); opacity: 0; }
+    61% { transform: translateY(0); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes scrollIndicatorChevron {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes scrollIndicatorFade {
+    0%, 100% { opacity: 0.85; }
+    50% { opacity: 0.4; }
   }
